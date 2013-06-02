@@ -8,8 +8,9 @@ namespace ClientCabinet.Common
 {
     public class Class1
     {
-publi void Test()
-{
-}
+	public string Test(string str)
+	{
+		return str;
+	}
     }
 }
