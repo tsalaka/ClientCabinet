@@ -8,5 +8,8 @@ namespace ClientCabinet.Common
 {
     public class Class1
     {
+publi void Test()
+{
+}
     }
 }
