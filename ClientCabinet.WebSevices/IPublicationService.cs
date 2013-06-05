@@ -13,7 +13,6 @@ using RC.PublicationManager.PublicationModule.ServerSettings;
 namespace RC.Publication.WcfService
 {
 	[ServiceContract(Namespace = "http://www.rencap.com/CMSAdmin/PublicationService")]
-	//[XmlSerializerFormat]
 	public interface IPublicationService
 	{
 		[OperationContract]
