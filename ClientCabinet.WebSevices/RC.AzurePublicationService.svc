@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="RC.Publication.AzureService.EndPoints.AzurePublicationService" CodeBehind="RC.AzurePublicationService.svc.cs" %>
