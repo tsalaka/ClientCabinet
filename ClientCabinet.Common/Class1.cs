@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClientCabinet.Common
 {
-    public class Class1
+    public class TestClass
     {
 	public string Test(string str)
 	{
