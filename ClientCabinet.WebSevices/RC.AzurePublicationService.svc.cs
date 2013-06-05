@@ -20,7 +20,7 @@ using RC.PublicationManager.PublicationModule.ServerSettings;
 namespace RC.Publication.AzureService.EndPoints
 {
 	[ACSBehavior.PublicationServiceMessageInspectorBehavior(typeof(AppSettings.ACS))]
-	[ServiceBehavior(Namespace = "http://www.rencap.com/CMSAdmin/PublicationService")]
+	[ServiceBehavior(Namespace = "http://www.rencap.com/CMSAdmin1/PublicationService")]
 	public class AzurePublicationService : IPublicationService
 	{
 		public byte[] FtpFilePut(string path, string username, string password)
