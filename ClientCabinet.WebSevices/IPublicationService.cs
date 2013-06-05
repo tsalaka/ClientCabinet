@@ -16,18 +16,18 @@ namespace RC.Publication.WcfService
 	public interface IPublicationService
 	{
 		[OperationContract]
-		PublicationStatus PublishContentBlock(ContentBase content, PublicationServerSettings serverSettings, bool isForcePublication);
+		PublicationStatus PublishContentBlock(ContentBase content, PublicationServerSettings serverSettings);
 
 		[OperationContract]
-		PublicationStatus Publish(SiteMap sitemap, List<Page> pageList, PublicationServerSettings serverSettings, bool isForcePublication);
+		PublicationStatus Publish(SiteMap sitemap, List<Page> pageList, PublicationServerSettings serverSettings);
 
 		[OperationContract]
-		PublicationStatus PublishPageContent(Page page, PublicationServerSettings serverSettings, bool isForcePublication);
+		PublicationStatus PublishPageContent(Page page, PublicationServerSettings serverSettings);
 		
 		[OperationContract]
 		PublicationStatus PublishSystemFiles(PublicationServerSettings serverSettings);
 		
 		[OperationContract]
-		PublicationStatus PublishSharedMenu(List<SharedMenu> sharedMenu, PublicationServerSettings serverSettings, bool isForcePublication);
+		PublicationStatus PublishSharedMenu(List<SharedMenu> sharedMenu, PublicationServerSettings serverSettings);
 	}
 }
