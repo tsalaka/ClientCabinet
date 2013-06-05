@@ -28,6 +28,7 @@ namespace RC.Publication.WcfService
 		PublicationStatus PublishSystemFiles(PublicationServerSettings serverSettings);
 		
 		[OperationContract]
-		PublicationStatus PublishSharedMenu(List<SharedMenu> sharedMenu, PublicationServerSettings serverSettings);
+
+		PublicationStatus PublishSharedMenu(List<SharedMenu> sharedMenu, PublicationServerSettings serverSettings, bool forcePublication);
 	}
 }
