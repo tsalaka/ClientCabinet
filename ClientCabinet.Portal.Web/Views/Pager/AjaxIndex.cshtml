@@ -1,0 +1,8 @@
+﻿@using(Html.BeginForm((string)ViewBag.Action,(string)ViewBag.Controller,FormMethod.Post))
+{
+	for (var i = 1; i <= ViewBag.PagerCount; i++)
+ {
+	 
+	@Ajax.ActionLink(i.ToString(), (string)ViewBag.Action, (string)ViewBag.Controller, new { pageNumber = i },new AjaxOptions{UpdateTargetId = ViewBag.UpdateTargetId},new {@class= (i==ViewBag.CurrentPage?"current":"")}) 
+ }
+}

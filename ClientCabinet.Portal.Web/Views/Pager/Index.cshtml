@@ -1,0 +1,7 @@
+﻿@using(Html.BeginForm((string)ViewBag.Action,(string)ViewBag.Controller,FormMethod.Post))
+{
+	for (var i = 1; i <= ViewBag.PagerCount; i++)
+ {
+		<input type="submit" value="@i" name="pageNumber" />
+ }
+}
