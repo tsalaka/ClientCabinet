@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCabinet.WinClient", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCabinet.Admin.Web", "ClientCabinet.Admin.Web\ClientCabinet.Admin.Web.csproj", "{06355218-172D-470F-9DA5-713E4580272E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{2167BEA5-9DF3-4B7F-BF8F-26796F80A8AA}"
+	ProjectSection(SolutionItems) = preProject
+		Build.proj = Build.proj
+		.build\MSBuild.Community.Tasks.dll = .build\MSBuild.Community.Tasks.dll
+		.build\MSBuild.Community.Tasks.targets = .build\MSBuild.Community.Tasks.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
