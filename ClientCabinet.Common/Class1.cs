@@ -8,10 +8,9 @@ namespace ClientCabinet.Common
 {
     public class TestClass
     {
-	public string Test(string str)
-	{
-		return str;
-dfdf
-	}
+		public string Test(string str)
+		{
+			return str;
+		}
     }
 }
