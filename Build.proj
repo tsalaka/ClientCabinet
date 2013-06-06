@@ -8,8 +8,8 @@
 
   <!-- Version Number -->
   <PropertyGroup Condition=" '$(BUILD_NUMBER)' == '' ">
-    <Version>1.0.0.0</Version>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.2.0.0</Version>
+    <FileVersion>1.2.0.0</FileVersion>
     <InformationalVersion>1.0.0.0</InformationalVersion>
   </PropertyGroup>
 
