@@ -11,6 +11,7 @@ namespace ClientCabinet.Common
 		public string Test(string str)
 		{
 			return str;
+
 		}
     }
 }
