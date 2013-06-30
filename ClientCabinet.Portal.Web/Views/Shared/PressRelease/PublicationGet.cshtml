@@ -1,0 +1,11 @@
+﻿@using System.Globalization
+@using RC.SiteCore.Engine.Views.Shared.PressRelease.App_LocalResources
+@model RC.Content.Core.Entities.PublicationEntity
+
+@Html.ActionLink(@PublicationGet.BackToList,"BackToList", new {page = ViewBag.PageNumber})
+<div class="pressreleases">
+	<div class="date">@String.Format(CultureInfo.CurrentCulture, "{0: dd MMMM yyyy}", Convert.ToDateTime(Model.Date));</div>
+	<div class="title">@Html.Raw(Model.Title)</div>
+	<div class="source">@Html.Raw(Model.Source)</div>
+</div>
+

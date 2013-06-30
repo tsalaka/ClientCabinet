@@ -1,0 +1,14 @@
+﻿@model IList<RCSiteCore.Menu.IMenuNode>
+
+@Styles.Render("~/css/Shared/Menu/TopMenu.css")
+
+<table id="TopMenu">
+	<tr>
+		@foreach(var item in Model)
+		{
+			<td>
+				<a href="@item.Href">@item.Name</a>
+			</td>
+		}
+	</tr>
+</table>

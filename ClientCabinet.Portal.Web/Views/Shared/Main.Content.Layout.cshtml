@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+    </head>
+	<body>
+
+		<header>
+			<div class="topContent">
+				@{ Html.RenderAction("Index", "TopMenu",new {fileSrc = @"d:\Projects\SVN\Education\RC.SiteCore.Engine\SharedFiles\Schema\TopMenu.xml"}); }
+			</div>
+		</header>
+		<div class="menuContent">@RenderSection("SideMenu", required: false)</div>
+		<div class="mainContent">
+			@RenderBody()
+		</div>
+
+		<footer>
+			<div class="footerContent"></div>
+		</footer>
+
+		@Styles.Render("~/Content/Site.css")
+		@Scripts.Render("~/bundles/jquery")
+		@Scripts.Render("~/Scripts/jquery-1.7.1.min.js")
+		@Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.min.js")
+		@RenderSection("scripts", required: false)
+	</body>
+</html>
